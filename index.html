@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Flipper with JS</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 95vh;
+        height: 100vh;
+        font: 16px/1.5 "Open Sans";
+        transition: all ease 0.5s;
+      }
+
+      div.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      a.button {
+        color: #000;
+        text-decoration: none;
+        width: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        border: none;
+        border-radius: 40px;
+        transition: all ease-out 0.45s;
+        font-size: 18px;
+        background: #fff;
+      }
+
+      a.button:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+      }
+
+      .input-con {
+        position: relative;
+        transition: all ease 1s;
+      }
+
+      .input-con span {
+        position: absolute;
+        left: 15px;
+        top: 7px;
+        font-size: 14px;
+        color: #000;
+      }
+
+      .container .input-con input {
+        border: none;
+        outline: none;
+        background: #fee;
+        height: 2rem;
+        border-radius: 40px;
+        transition: all ease 1s;
+        width: 10rem;
+        padding-left: 80px;
+      }
+
+      .btns {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .btns a {
+        text-decoration: none;
+        color: #000;
+        border: none;
+        background: #fff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        padding: 0.3rem 1rem;
+        border-radius: 5px;
+        transition: all ease 0.5s;
+      }
+
+      .btns a.edit:hover {
+        color: blue;
+        font-weight: bold;
+      }
+
+      .btns a.save:hover {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" class="button">Click Me!</a>
+      <div class="input-con">
+        <span id="colorTag">Color is:</span>
+        <input type="text" disabled name="" class="input" id="" />
+      </div>
+      <div class="btns">
+        <a href="" class="edit">Edit</a>
+        <a href="" class="save">Change</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
